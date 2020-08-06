@@ -1,0 +1,31 @@
+.navbar {
+  background-color: white;
+  align-items: stretch;
+  display: flex;
+  position: relative;
+  z-index: 30;
+}
+
+.navbar-brand img,
+.navbar-logo {
+  display: block;
+  max-height: none;
+  width: 30px;
+  margin-right: 0.25rem;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-right: auto;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
