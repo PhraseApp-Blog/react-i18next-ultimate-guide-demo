@@ -8,10 +8,13 @@ i18next
   .init({
     lng: "en",
     backend: {
-      loadPath: "/lang/{{lng}}.json",
+      loadPath: "/lang/{{lng}}/{{ns}}.json",
     },
     interpolation: {
       escapeValue: false,
+    },
+    react: {
+      useSuspense: false,
     },
     debug: process.env.NODE_ENV === "development",
   });

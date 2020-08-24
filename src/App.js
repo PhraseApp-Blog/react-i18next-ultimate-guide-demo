@@ -1,20 +1,27 @@
 import React from "react";
-import "./App.scss";
+import { useTranslation } from "react-i18next";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import WeeklyBasket from "./components/WeeklyBasket";
+import "./App.scss";
 
 function App() {
-  return (
-    <>
-      <Navbar />
+  const { ready } = useTranslation();
 
-      <main role="main" className="pt-5 px-3">
-        <Header />
-        <WeeklyBasket />
-      </main>
-    </>
-  );
+  if (ready) {
+    return (
+      <>
+        <Navbar />
+
+        <main role="main" className="pt-5 px-3">
+          <Header />
+          <WeeklyBasket />
+        </main>
+      </>
+    );
+  } else {
+    return <p>Loading...</p>;
+  }
 }
 
 export default App;
