@@ -1,14 +1,25 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import logo from "../logo.png";
 
 export default function () {
+  const { t } = useTranslation();
+
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav
+      className="navbar"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div className="navbar-brand">
         <a className="navbar-item" href="/">
-          <img className="navbar-logo" src={logo} alt="logo" />
+          <img
+            className="navbar-logo"
+            src={logo}
+            alt="logo"
+          />
 
-          <strong>Grootbasket</strong>
+          <strong>{t("app_name")}</strong>
         </a>
       </div>
 
