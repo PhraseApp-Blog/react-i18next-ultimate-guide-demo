@@ -29,3 +29,19 @@
   flex-grow: 0;
   flex-shrink: 0;
 }
+
+.card {
+  height: 100%;
+  border-radius: 0.25rem;
+
+  img {
+    width: auto;
+    height: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+}
+
+.card-image {
+  height: 190px;
+  overflow: hidden;
+}
