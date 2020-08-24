@@ -1,25 +1,19 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
+import HttpApi from "i18next-http-backend";
 
-const resources = {
-  en: {
-    translation: {
-      app_name: "Grootbasket",
+i18next
+  .use(initReactI18next)
+  .use(HttpApi)
+  .init({
+    lng: "en",
+    backend: {
+      loadPath: "/lang/{{lng}}.json",
     },
-  },
-  ar: {
-    translation: {
-      app_name: "جروتباسكت",
+    interpolation: {
+      escapeValue: false,
     },
-  },
-};
-
-i18next.use(initReactI18next).init({
-  resources,
-  lng: "en",
-  interpolation: {
-    escapeValue: false,
-  },
-});
+    debug: process.env.NODE_ENV === "development",
+  });
 
 export default i18next;
