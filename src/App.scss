@@ -10,6 +10,8 @@ $link: #d03c25;
 $card-background-color: #fbfbf8;
 $card-content-padding: 0.75rem;
 
+$navbar-breakpoint: 950px;
+
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/helpers/_all.sass";
