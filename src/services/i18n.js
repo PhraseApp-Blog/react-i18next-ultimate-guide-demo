@@ -7,6 +7,7 @@ i18next
   .use(HttpApi)
   .init({
     lng: "en",
+    // ns: ["translation", "navbar"],
     backend: {
       loadPath: "/lang/{{lng}}/{{ns}}.json",
     },
