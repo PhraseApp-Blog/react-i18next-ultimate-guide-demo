@@ -15,7 +15,7 @@ i18next
       escapeValue: false,
     },
     react: {
-      useSuspense: false,
+      useSuspense: true, // this is the default value
     },
     debug: process.env.NODE_ENV === "development",
   });

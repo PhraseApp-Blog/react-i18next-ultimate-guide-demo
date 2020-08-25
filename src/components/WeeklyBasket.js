@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Item from "./Item";
 
-function WeeklyBasket(props) {
+function WeeklyBasket() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
