@@ -1,12 +1,20 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
+import {
+  defaultLanguage,
+  supportedLanguages,
+} from "../config/i18n";
 
 i18next
   .use(initReactI18next)
   .use(HttpApi)
   .init({
-    lng: "en",
+    lng: defaultLanguage,
+    supportedLngs: supportedLanguages.map(
+      (lang) => lang.code,
+    ),
+    fallbackLng: defaultLanguage,
     // ns: ["translation", "navbar"],
     backend: {
       loadPath: "/lang/{{lng}}/{{ns}}.json",

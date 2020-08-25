@@ -1,8 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import logo from "../logo.png";
+import LanguageSwitcher from "./LanguageSwitcher";
 
-function Navbar() {
+function Navbar({ onLanguageChange }) {
   const { t } = useTranslation(["translation", "navbar"]);
 
   return (
@@ -28,6 +29,12 @@ function Navbar() {
           <a className="navbar-item" href="/">
             {t("navbar:weekly_basket")}
           </a>
+        </div>
+
+        <div className="navbar-end">
+          <div className="navbar-item">
+            <LanguageSwitcher onChange={onLanguageChange} />
+          </div>
         </div>
       </div>
     </nav>
