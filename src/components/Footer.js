@@ -1,4 +1,5 @@
 import React from "react";
+import { Trans } from "react-i18next";
 
 function Footer() {
   return (
@@ -6,11 +7,13 @@ function Footer() {
       <hr />
 
       <p className="has-text-centered">
-        Demo for a{" "}
-        <a href="https://phrase.com/blog">Phrase blog</a>{" "}
-        article.
-        <br />
-        Created with React, i18next, and Bulma.
+        <Trans i18nKey="footer">
+          Demo for a{" "}
+          <a href="https://phrase.com/blog">Phrase blog</a>{" "}
+          article.
+          <br />
+          Created with React, i18next, and Bulma.
+        </Trans>
       </p>
     </footer>
   );

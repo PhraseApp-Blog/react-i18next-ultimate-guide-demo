@@ -1,5 +1,6 @@
 {
   "app_name": "Grootbasket",
   "weekly_basket_title": "In this Week's Grootbasket",
-  "estimated_weight": "Estimated weight"
+  "estimated_weight": "Estimated weight",
+  "footer": "Demo for <2>Phrase blog</2> article.<5/>Created with React, i18next, and Bulma."
 }
