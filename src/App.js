@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import WeeklyBasket from "./components/WeeklyBasket";
 import "./App.scss";
 
@@ -20,6 +21,8 @@ function App() {
         <Header />
         <WeeklyBasket />
       </main>
+
+      <Footer />
     </>
   );
 }
