@@ -11,13 +11,11 @@ function App() {
 
   return (
     <>
-      <React.Suspense fallback="Loading...">
-        <Navbar
-          onLanguageChange={(lang) =>
-            i18n.changeLanguage(lang)
-          }
-        />
-      </React.Suspense>
+      <Navbar
+        onLanguageChange={(lang) =>
+          i18n.changeLanguage(lang)
+        }
+      />
 
       <main role="main" className="pt-5 px-3">
         <Header />

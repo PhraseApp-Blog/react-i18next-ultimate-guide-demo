@@ -4,7 +4,7 @@ import logo from "../logo.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 function Navbar({ onLanguageChange }) {
-  const { t } = useTranslation(["translation", "navbar"]);
+  const { t } = useTranslation();
 
   return (
     <nav
@@ -27,7 +27,7 @@ function Navbar({ onLanguageChange }) {
       <div className="navbar-menu">
         <div className="navbar-start">
           <a className="navbar-item" href="/">
-            {t("navbar:weekly_basket")}
+            {t("weekly_basket")}
           </a>
         </div>
 

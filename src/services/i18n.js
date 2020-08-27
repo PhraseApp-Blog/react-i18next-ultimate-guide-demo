@@ -15,21 +15,35 @@ i18next
   .init({
     // lng will override the browser detector if provided
     // lng: defaultLanguage,
+
     supportedLngs: supportedLanguages.map(
       (lang) => lang.code,
     ),
+
+    // Good idea to provide a fallback when loading
+    // translations from a back-end, to avoid unsuccessful
+    // attempts to load default fallbackLng ("dev").
     fallbackLng: defaultLanguage,
-    // eagerly loaded namespaces
-    // ns: ["translation", "navbar"],
-    backend: {
-      loadPath: "/lang/{{lng}}/{{ns}}.json",
-    },
+
+    // Eagerly loaded languages
+    // preload: ["en", "ar"],
+
+    // Back-end config
+    // backend: {
+    //   loadPath: "/locales/{{lng}}/{{ns}}.json",
+    // },
+
     interpolation: {
+      // React will escape output values, so we don't need
+      // i18next to do it.
       escapeValue: false,
     },
-    react: {
-      useSuspense: true, // this is the default value
-    },
+
+    // react-i18next config
+    // react: {
+    //   useSuspense: true,
+    // },
+
     debug: process.env.NODE_ENV === "development",
   });
 
