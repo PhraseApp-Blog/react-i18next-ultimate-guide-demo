@@ -20,6 +20,8 @@ i18next
       (lang) => lang.code,
     ),
 
+    nonExplicitSupportedLngs: true,
+
     // Good idea to provide a fallback when loading
     // translations from a back-end, to avoid unsuccessful
     // attempts to load default fallbackLng ("dev").
@@ -48,3 +50,7 @@ i18next
   });
 
 export default i18next;
+
+export function languageCodeOnly(fullyQualifiedCode) {
+  return fullyQualifiedCode.split("-")[0];
+}
