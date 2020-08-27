@@ -1,4 +1,4 @@
-## Demo App for Phrase Blog React i18nnext Article
+## Demo App for Phrase Blog React i18next Article
 
 This is a companion demo app for a [Phrase blog](https://phrase.com/blog)
 article.
