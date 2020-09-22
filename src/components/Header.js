@@ -11,7 +11,7 @@ class Header extends React.Component {
               {t("weekly_basket_title")}
             </h1>
 
-            <p>2,342 baskets delivered</p>
+            <p>{t("basket_delivered", { count: 2342 })}</p>
           </div>
         )}
       </Translation>

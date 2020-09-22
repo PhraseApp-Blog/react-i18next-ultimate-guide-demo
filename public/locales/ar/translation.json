@@ -4,5 +4,7 @@
   "weekly_basket_title": "أغسطس ١٧ ٢٠٢٠ — في الجروتباسكت هذا الإسبوع",
   "estimated_weight": "الوزن المقدر",
   "footer": "عرض لمقالة في <2>مدونة فرايز</2>.<5/>بني بواسطة ريأكت و أي إيتين نكست و بولما.",
-  "hello_user": "أهلاً {{user.firstName}}"
+  "hello_user": "أهلاً {{user.firstName}}",
+  "basket_delivered": "{{count}} سبت تم توصيله",
+  "basket_delivered_plural": "{{count}} سبت تم توصيله"
 }
