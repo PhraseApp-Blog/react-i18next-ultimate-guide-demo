@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -8,6 +8,10 @@ import "./App.scss";
 
 function App() {
   const { i18n } = useTranslation();
+
+  useEffect(() => {
+    document.dir = i18n.dir();
+  }, [i18n, i18n.language]);
 
   return (
     <>

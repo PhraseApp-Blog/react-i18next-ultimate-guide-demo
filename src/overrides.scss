@@ -30,6 +30,18 @@
   flex-shrink: 0;
 }
 
+[dir="rtl"] {
+  .navbar-start {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .navbar-end {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
 .card {
   height: 100%;
   border-radius: 0.25rem;
