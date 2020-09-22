@@ -3,6 +3,7 @@ import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 
+import format from "./i18n-format";
 import {
   defaultLanguage,
   supportedLanguages,
@@ -39,6 +40,7 @@ i18next
       // React will escape output values, so we don't need
       // i18next to do it.
       escapeValue: false,
+      format,
     },
 
     // react-i18next config
