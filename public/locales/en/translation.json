@@ -3,5 +3,6 @@
   "weekly_basket_title": "In this Week's Grootbasket",
   "weekly_basket": "Weekly Basket",
   "estimated_weight": "Estimated weight",
-  "footer": "Demo for <2>Phrase blog</2> article.<5/>Created with React, i18next, and Bulma."
+  "footer": "Demo for <2>Phrase blog</2> article.<5/>Created with React, i18next, and Bulma.",
+  "hello_user": "Hello, {{user}}"
 }

@@ -33,6 +33,10 @@ function Navbar({ onLanguageChange }) {
 
         <div className="navbar-end">
           <div className="navbar-item">
+            <p>{t("hello_user", { user: "Abed" })}</p>
+          </div>
+
+          <div className="navbar-item">
             <LanguageSwitcher onChange={onLanguageChange} />
           </div>
         </div>
