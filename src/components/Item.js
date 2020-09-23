@@ -28,8 +28,9 @@ function Item({
               <span className="tag is-light is-medium">
                 {t("estimated_weight")}
               </span>{" "}
-              {estimatedWeightInKilograms}
-              kg
+              {t("estimated_weight_kg", {
+                weight: estimatedWeightInKilograms,
+              })}
             </p>
           </div>
         </div>
