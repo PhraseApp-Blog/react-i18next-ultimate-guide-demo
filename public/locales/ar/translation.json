@@ -1,5 +1,6 @@
 {
   "app_name": "جروتباسكت",
+  "document_title": "جروتباسكت — سلة الطعام العضوية الأسبوعية",
   "weekly_basket": "السلة الإسبوعية",
   "weekly_basket_title": "في الجروتباسكت هذا الإسبوع — {{date, date}}",
   "estimated_weight": "الوزن المقدر",
