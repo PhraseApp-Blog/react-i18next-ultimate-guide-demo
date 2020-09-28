@@ -1,7 +1,16 @@
 {
   "app_name": "جروتباسكت",
+  "document_title": "جروتباسكت — سلة الطعام العضوية الأسبوعية",
   "weekly_basket": "السلة الإسبوعية",
-  "weekly_basket_title": "أغسطس ١٧ ٢٠٢٠ — في الجروتباسكت هذا الإسبوع",
+  "weekly_basket_title": "في الجروتباسكت هذا الإسبوع — {{date, date}}",
   "estimated_weight": "الوزن المقدر",
-  "footer": "عرض لمقالة في <2>مدونة فرايز</2>.<5/>بني بواسطة ريأكت و أي إيتين نكست و بولما."
+  "estimated_weight_kg": "{{weight, number(style: unit; unit: kilogram)}}",
+  "footer": "عرض لمقالة في <2>مدونة فريز</2>.<5/>بني بواسطة ريأكت و أي إيتين نكست و بولما.",
+  "hello_user": "أهلاً {{user.firstName}}",
+  "basket_delivered_0": "لم يتم توصيل سلال",
+  "basket_delivered_1": "تم توصيل سله {{count, number}}",
+  "basket_delivered_2": "تم توصيل سلتان",
+  "basket_delivered_3": "تم توصيل {{count, number}} سلال",
+  "basket_delivered_4": "تم توصيل {{count, number}} سله",
+  "basket_delivered_5": "تم توصيل {{count, number}} سله"
 }

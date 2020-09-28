@@ -1,7 +1,12 @@
 {
   "app_name": "Grootbasket",
-  "weekly_basket_title": "In this Week's Grootbasket",
+  "document_title": "Grootbasket — Your weekly organic basket",
+  "weekly_basket_title": "In this Week's Grootbasket — {{date, date(day: numeric; month: short; year: numeric)}}",
   "weekly_basket": "Weekly Basket",
   "estimated_weight": "Estimated weight",
-  "footer": "Demo for <2>Phrase blog</2> article.<5/>Created with React, i18next, and Bulma."
+  "estimated_weight_kg": "{{weight, number(style: unit; unit: kilogram)}}",
+  "footer": "Demo for <2>Phrase blog</2> article.<5/>Created with React, i18next, and Bulma.",
+  "hello_user": "Hello, {{user.firstName}}",
+  "basket_delivered": "{{count, number}} basket delivered",
+  "basket_delivered_plural": "{{count, number}} baskets delivered"
 }

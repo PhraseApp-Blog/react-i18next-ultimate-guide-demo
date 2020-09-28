@@ -6,6 +6,8 @@ import LanguageSwitcher from "./LanguageSwitcher";
 function Navbar({ onLanguageChange }) {
   const { t } = useTranslation();
 
+  const user = { firstName: "Abed", lastName: "Nadir" };
+
   return (
     <nav
       className="navbar"
@@ -32,6 +34,10 @@ function Navbar({ onLanguageChange }) {
         </div>
 
         <div className="navbar-end">
+          <div className="navbar-item">
+            <p>{t("hello_user", { user })}</p>
+          </div>
+
           <div className="navbar-item">
             <LanguageSwitcher onChange={onLanguageChange} />
           </div>

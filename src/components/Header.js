@@ -8,10 +8,12 @@ class Header extends React.Component {
         {(t) => (
           <div className="header">
             <h1 className="title is-4 has-text-centered mb-5">
-              {t("weekly_basket_title")}
+              {t("weekly_basket_title", {
+                date: new Date(),
+              })}
             </h1>
 
-            <p>2,342 baskets delivered</p>
+            <p>{t("basket_delivered", { count: 2342 })}</p>
           </div>
         )}
       </Translation>
